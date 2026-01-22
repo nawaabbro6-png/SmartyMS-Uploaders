@@ -176,7 +176,7 @@ async def txt_handler(bot: Client, m: Message):
             links.append(i.split("://", 1))
         os.remove(x)
     except:
-        await m.reply_text("Are yaar txt file Bhejni thi,Chal koi na tap on /Love Or /Hate then resend txt file to me again🫂.")
+        await m.reply_text("Are yaar **txt** file Bhejni thi \n\n **Chal koi na tap on** /Love **Or* /Hate **then** \n\n **resend txt file to me again🫂.**")
         os.remove(x)
         return
    
@@ -413,7 +413,7 @@ async def txt_handler(bot: Client, m: Message):
             links.append(i.split("://", 1))
         os.remove(x)
     except:
-        await m.reply_text("Are yaar txt file Bhejni thi,Chal koi na tap on /Love or /Hate then resend txt file to me again🫂.")
+        await m.reply_text("Are yaar **txt** file Bhejni thi \n\n **Chal koi na tap on** /Love **Or* /Hate **then** \n\n **resend txt file to me again🫂.**")
         os.remove(x)
         return
    
