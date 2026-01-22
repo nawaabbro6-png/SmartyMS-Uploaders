@@ -154,7 +154,7 @@ async def start(client: Client, msg: Message):
 
 @bot.on_message(filters.command(["stop"]) )
 async def restart_handler(_, m):
-    await m.reply_text("**STOPPED**🛑", True)
+    await m.reply_text("💔**STOPPED**💔", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
@@ -219,7 +219,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '/Lover' for use default.🌚\n Eg :@SmartBoy_ApnaMS **")
+    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '/Lover' for use default🌚.**\n **For an Example** :@SmartBoy_ApnaMS")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -228,7 +228,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         CR = raw_text3
         
-    await editable.edit("**Enter Your PW 𝗧𝗼𝗸𝗲𝗻 For 𝐌𝐏𝐃 𝐔𝐑𝐋  or send '/vip' for use default😄.**")
+    await editable.edit("**Enter Your PW 𝗧𝗼𝗸𝗲𝗻 For 𝐌𝐏𝐃 𝐔𝐑𝐋  or send '/vip' for use default🫣.**")
     input4: Message = await bot.listen(editable.chat.id)
     raw_text4 = input4.text
     await input4.delete(True)
@@ -434,7 +434,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("**Enter resolution.\n Eg : 144, 240, 360, 480, 720 or 1080😄.**")
+    await editable.edit("**Enter resolution.**\n Eg : 144, 240, 360, **480**, 720 or 1080😄.")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -456,7 +456,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '/Hater' for use default.🌚\n Eg : @SmartBoy_ApnaMS**")
+    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '/Hater' for use default🌚.**\n **For an Example** : @SmartBoy_ApnaMS")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -465,7 +465,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         CR = raw_text3
         
-    await editable.edit("**Enter Your PW 𝗧𝗼𝗸𝗲𝗻 For 𝐌𝐏𝐃 𝐔𝐑𝐋  or send '/vip' for use default😄.**")
+    await editable.edit("**Enter Your PW 𝗧𝗼𝗸𝗲𝗻 For 𝐌𝐏𝐃 𝐔𝐑𝐋  or send '/vip' for use default🫣.**")
     input4: Message = await bot.listen(editable.chat.id)
     raw_text4 = input4.text
     await input4.delete(True)
